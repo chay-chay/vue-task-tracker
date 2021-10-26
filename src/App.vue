@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      task: [],
+      tasks: [],
     };
   },
   methods: {
@@ -25,7 +25,9 @@ export default {
       // console.log(this.tasks[0])
       // console.log(id)
       if(confirm('Are you sure?')){
+        console.log(id)
         this.tasks = this.tasks.filter((task) =>  task.id !== id)
+        console.log(this.tasks)
 
       }
       // this.tasks = this.tasks.filter((task) =>  console.log(task.id))
